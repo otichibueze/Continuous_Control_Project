@@ -43,7 +43,7 @@ The observation space consists of 33 variables corresponding to position, rotati
 
     (_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Linux_NoVis.zip) (version 1) or [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux_NoVis.zip) (version 2) to obtain the "headless" version of the environment.  You will **not** be able to watch the agent without enabling a virtual screen, but you will be able to train the agent.  (_To watch the agent, you should follow the instructions to [enable a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md), and then download the environment for the **Linux** operating system above._)
 
-2. Download project and run file Report.ipynb in GitHub repository for single agent or Report_Multi.ipynb in GitHub repository for multiple agents.
+2. Clone repository and run file `Report.ipynb` in repository for single agent or run file `Report_Multi.ipynb` in repository for multiple agents.
     
 ## Dependencies
 
@@ -80,7 +80,7 @@ python -m ipykernel install --user --name drlnd --display-name "drlnd"
 
 5. Before running code in a notebook, change the kernel to match the `drlnd` environment by using the drop-down `Kernel` menu. 
 
-![Kernel][image2]
+![alt text](https://github.com/otichibueze/p2_continuous_control_project/blob/master/kernel.png)
 
 ### Learning Algorithm
 To get started we need to determine the algorithm best suited for Reacher enviroment which is a continous action space.
