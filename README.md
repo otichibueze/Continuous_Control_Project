@@ -62,6 +62,18 @@ we will implement Deep Deterministic Policy Gradient (DDPG) for this project. Th
 Actor critic methods are at the intersection of value-based methods such as DQN and policy-based methods such as reinforce. If a deep reinforcement learning agent uses a deep neural network to approximate a  value function the agent is said to be value-based, if an agent uses a deep neural network to approximate a policy the agent is said to be policy based. 
 Actor-critic methods combine these two approaches in order to accelerate the learning process. 
 
+#### Hyper Parameters Used
+- BUFFER_SIZE = int(2e6)  
+- BATCH_SIZE = 128      
+- GAMMA = 0.99
+- TAU = 1e-3
+- LR_ACTOR = 1e-4      
+- LR_CRITIC = 1e-4        
+- WEIGHT_DECAY = 0
+- UPDATE_EVERY = 10 
+- Size of hidden layers = 256, 128, 64
+
+
 **Gradient Clipping**
 We had troubles getting the agent to learn because the weight from the critic model is becoming quite large after a few episodes of training making updates too large to allow the model to learn. Using gradient clipping when training the critic network we can combat this problem code below
 
@@ -105,7 +117,10 @@ _Multiple Agents_
 
     
 ### Future Improvements 
-Experiment with other algorithms like 
+- **Add prioritized experience replay**  Rather than selecting experience tuples randomly, prioritized replay selects experiences based on a priority value that is correlated with the magnitude of error. This can improve learning by increasing the probability that rare and important experience vectors are sampled.
+
+
+**Experiment with other algorithms like**
 - PPO [paper](https://arxiv.org/abs/1707.06347) 
 - (A2C) [paper](https://arxiv.org/abs/1602.01783v2)
 
