@@ -141,14 +141,12 @@ The number rof updates per time step affects performance of agent, So instead of
 In the second version of the project environment, there are 20 identical copies of the agent. It has been shown that having multiple copies of the same agent [sharing experience can accelerate learning](https://ai.googleblog.com/2016/10/how-robots-can-acquire-new-skills-from.html), and you'll discover this for yourself when solving the project!
     
 ### Run Experiments
-_Single Agent_
-Enviroment Solved in 571 episodes with an average score +35.00 over 100 episodes for single agent environment.
+Single Agent enviroment Solved in 571 episodes with an average score +35.00 over 100 episodes.
 ![alt text](https://github.com/otichibueze/p2_continuous_control_project/blob/master/single.png)
 
 
 
-_Multiple Agents_
-Enviroment Solved in 108 episodes with an average score of +35.27 over 100 episodes for multiple agent enviroment.
+Multiple agents enviroment Solved in 108 episodes with an average score of +35.27 over 100 episodes 
 ![alt text](https://github.com/otichibueze/p2_continuous_control_project/blob/master/multi.png)
 
 
