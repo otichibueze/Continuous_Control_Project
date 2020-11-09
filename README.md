@@ -49,7 +49,7 @@ The observation space consists of 33 variables corresponding to position, rotati
 To get started we need to determine the algorithm best suited for Reacher enviroment which is a continous action space.
 Policy based methods are used when an enviroment has infinite states.
 
-**POLICY BASED METHODS**
+Policy Based Methods
 A policy defines the learning agent's way of behaving at a given time. Roughly speaking, a policy is a mapping from perceived states of the environment to actions to be taken when in those states.
     
 **Algorithms Options**
@@ -57,7 +57,7 @@ A policy defines the learning agent's way of behaving at a given time. Roughly s
 - (Continuous/Discrete) Synchronous Advantage Actor Critic (A2C) [paper](https://arxiv.org/abs/1602.01783v2)
 - Deep Deterministic Policy Gradient (DDPG) [paper](https://arxiv.org/pdf/1509.02971.pdf)
     
-####  Deep Deterministic Policy Gradient
+###  Deep Deterministic Policy Gradient
 we will implement Deep Deterministic Policy Gradient (DDPG) for this project. This works with Actor-Critic methods.
 Actor critic methods are at the intersection of value-based methods such as DQN and policy-based methods such as reinforce. If a deep reinforcement learning agent uses a deep neural network to approximate a  value function the agent is said to be value-based, if an agent uses a deep neural network to approximate a policy the agent is said to be policy based. 
 Actor-critic methods combine these two approaches in order to accelerate the learning process. 
